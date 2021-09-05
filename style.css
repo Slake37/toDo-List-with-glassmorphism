@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('./lucas-benjamin-wQLAGv4_OYs-unsplash.jpg');
+}
+
+.container{
+    width:50vw;
+    min-height: 80vh;
+    margin:2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color:#fff;
+    font-weight: 200;
+    padding:2rem 0;
+}
+
+.container h1{
+    margin-bottom: 3rem;
+}
+
+.input-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+#todo{
+    height:1.5rem;
+    margin:1.5rem;
+    padding:1rem ;
+    font-size: 1rem;
+    border: none;
+}
+
+#todo:focus{
+    outline: none;
+}
+
+#add{
+    padding:0.5rem 2rem;
+    font-weight: 600;
+    border: none;
+    transition: 0.5s ease all;
+}
+
+#add:hover{
+    background-color: rgb(170, 164, 164);
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding:0.2rem 0.5rem;
+}
+
+i{
+    cursor: pointer;
+    margin-left:10rem;
+    color:rgb(221, 6, 6);
+    transition: 0.5s ease all;
+}
+
+i:hover{
+    color:rgb(87, 4, 4);
+}
+
+.done{
+    background-color: rgb(9, 255, 0);
+    color: #000;
+}
+
+.delete{
+    display: none;
+}
